@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sophie Bluel - Architecte d'intérieur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./assets/JS/main.js" defer></script>
+  </head>
+  <body>
+    <!-----------Header------------->
+    <header>
+      <div class="mode-edition">
+        <i class="fa-solid fa-pen-to-square"></i>
+        <p>Mode édition</p>
+      </div>
+      <h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+      <nav>
+        <ul>
+          <li>projets</li>
+          <li>contact</li>
+          <li><a href="./login.html" class="log-out">login</a></li>
+          <li><img src="./assets/icons/instagram.png" alt="Instagram" /></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+      <!---------Modale--------->
+
+      <div class="background-grey"></div>
+      <section id="modale">
+        <div class="trash">
+          <div class="head">
+            <a href="#" class="cross"><i class="fa-solid fa-xmark"></i></a>
+            <h2>Galerie photo</h2>
+          </div>
+          <div class="photo"></div>
+          <a href="#" class="btn btn-add">Ajouter une photo</a>
+        </div>
+        <div class="add">
+          <div class="head">
+            <div class="icons">
+              <a href="#" class="arrow"
+                ><i class="fa-solid fa-arrow-left"></i
+              ></a>
+              <a href="#" class="cross"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <h2>Ajout photo</h2>
+          </div>
+          <div class="add-img">
+            <i class="fa-regular fa-image icone-add"></i>
+            <label class="label-add" for="image-input">+ Ajouter photo</label>
+            <input type="file" id="image-input" accept="image/*"/>
+            <img class="prev-img" alt="" />
+            <p class="p-add">jpg, png : 4mo max</p>
+          </div>
+          <div class="add-form">
+            <label for="text">Titre</label>
+            <input type="text" id="title">
+            <div class="categorie">
+              <label for="select">Catégorie</label>
+              <select name="select" id="select">
+              </select>
+            </div>
+            
+          </div>
+          <a href="#" class=" btn btn-value">Valider</a>
+        </div>
+      </section>
+
+      <!------------Introduction------------>
+
+      <section id="introduction">
+        <figure>
+          <a href="index.html"><img src="./assets/images/sophie-bluel.png" alt="" /></a>
+        </figure>
+        <article>
+          <h2>Designer d'espace</h2>
+          <p>
+            Je raconte votre histoire, je valorise vos idées. Je vous accompagne
+            de la conception à la livraison finale du chantier.
+          </p>
+          <p>
+            Chaque projet sera étudié en commun, de façon à mettre en valeur les
+            volumes, les matières et les couleurs dans le respect de l’esprit
+            des lieux et le choix adapté des matériaux. Le suivi du chantier
+            sera assuré dans le souci du détail, le respect du planning et du
+            budget.
+          </p>
+          <p>
+            En cas de besoin, une équipe pluridisciplinaire peut-être constituée
+            : architecte DPLG, décorateur(trice)
+          </p>
+        </article>
+      </section>
+
+      <!----------Portfolio-------------->
+
+      <section id="portfolio">
+        <div class="en-tete">
+          <h2>Mes Projets</h2>
+          <div class="btn-modifier"></div>
+        </div>
+        <div class="btn-filter"></div>
+        <div class="gallery"></div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Vous avez un projet ? Discutons-en !</p>
+        <form action="#" method="post">
+          <label for="name">Nom</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <input type="submit" value="Envoyer" />
+        </form>
+      </section>
+    </main>
+
+    <!------------Footer------------>
+    
+    <footer>
+      <nav>
+        <ul>
+          <li>Mentions Légales</li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,597 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  font-family: Work sans, sans-serif;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: #fffef8;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** end reset css**/
+body {
+  max-width: 1140px;
+  margin: auto;
+  font-family: "Work Sans";
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+section {
+  margin: 50px 0;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Syne";
+  font-size: 22px;
+  font-weight: 800;
+  color: #b1663c;
+}
+
+h1 > span {
+  font-family: "Work Sans";
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 30px;
+  color: #1d6154;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav li {
+  padding: 0 10px;
+  font-size: 1.2em;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav img {
+  height: 20px;
+  margin-left: 20px;
+}
+
+li:hover,
+li a:hover {
+  color: #b1663c;
+}
+
+.mode-edition {
+  position: absolute;
+  top: 0;
+  max-width: 1140px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  gap: 10px;
+  display: none;
+}
+
+/****** INTRODUCTION *****/
+
+#introduction {
+  display: flex;
+  align-items: center;
+}
+
+#introduction figure {
+  flex: 1;
+}
+
+#introduction img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+#introduction article {
+  flex: 1;
+}
+
+#introduction h2 {
+  margin-bottom: 1em;
+}
+
+#introduction p {
+  margin-bottom: 0.5em;
+}
+
+/******* PORTFOLIO *******/
+
+#portfolio h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.en-tete {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 100px 0 50px 0;
+  z-index: 0;
+}
+
+.btn-modifier {
+  position: absolute;
+  right: 350px;
+  top: 10px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 100;
+  z-index: 0;
+}
+
+.btn-modifier:hover {
+  cursor: pointer;
+}
+
+.btn-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.btn-filter a {
+  border: solid 1px #1d6154;
+  border-radius: 25px;
+  padding: 5px 10px;
+  color: #1d6154;
+}
+
+.btn-filter a:hover {
+  color: white;
+  background-color: #1d6154;
+}
+
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+/******* CONTACT / LOGIN ******/
+
+#login a {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.gras {
+  font-weight: 700;
+}
+
+#contact,
+#login {
+  width: 50%;
+  margin: auto;
+}
+
+#contact > *,
+#login > * {
+  text-align: center;
+}
+
+#contact h2,
+#login h2 {
+  margin-bottom: 20px;
+}
+
+#contact form,
+#login form {
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact input,
+#login input {
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#contact label,
+#login label {
+  margin: 2em 0 1em 0;
+}
+
+#contact textarea {
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"] {
+  font-family: "Syne";
+  font-weight: 700;
+  color: white;
+  background-color: #1d6154;
+  margin: 2em auto;
+  width: 180px;
+  text-align: center;
+  border-radius: 60px;
+}
+
+/******* MODALE *******/
+
+#modale {
+  background: white;
+  position: fixed;
+  height: 600px;
+  width: 33%;
+  left: 32%;
+  top: 50px;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 30px 30px 50px 30px;
+  display: none;
+  z-index: 2;
+}
+
+.head .arrow {
+  font-size: 24px;
+}
+
+.head a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.head h2 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin: 20px 0 0 0;
+  font-weight: 400;
+}
+
+.background-grey {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+/****** Modale - Trash *****/
+
+.trash .head i {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.photo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 50px 70px 40px 70px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  border-bottom: solid 1px grey;
+}
+
+.photo img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo figure {
+  position: relative;
+}
+
+.photo figure i {
+  position: absolute;
+  right: 0;
+  font-size: 10px;
+  padding: 5px;
+  margin: 5px;
+  background-color: black;
+  color: white;
+}
+
+.trash .btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border: solid 1px #1d6154;
+  border-radius: 50px;
+  background-color: #1d6154;
+  padding: 10px 0px;
+  width: 50%;
+  margin: auto;
+}
+
+/******* Modale - Add *****/
+
+.add {
+  display: none;
+}
+
+.add .head .icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-value {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border: solid 1px grey;
+  border-radius: 50px;
+  background: grey;
+  padding: 10px 0px;
+  width: 50%;
+  margin: auto;
+}
+
+.add-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E8F1F6;
+  margin: 30px 80px;
+  padding: 10px;
+  height: 170px;
+}
+
+.add-img i {
+  font-size: 75px;
+  margin: 10px;
+  color: #B9C5CC;
+}
+
+.add-img button {
+  border-radius: 25px;
+  background-color: #B9C5CC;
+  border: #B9C5CC;
+  color: #306685;
+  font-size: 14px;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+
+.add-img p {
+  font-size: 10px;
+}
+
+.add-img label {
+  border: solid 1px #CBD6DC;
+  border-radius: 25px;
+  padding: 10px 30px;
+  background-color: #CBD6DC;
+  color:#306685;
+}
+
+.add-img input {
+  display: none;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 80px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px grey;
+}
+
+.categorie {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.add-form input {
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 4px 14px 0px rgba(0, 0, 0, 0.09);
+  margin: 10px 0 20px 0;
+}
+
+select {
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 4px 14px 0px rgba(0, 0, 0, 0.09);
+  margin: 10px 0 20px 0;
+}
+
+.categorie i {
+  position: absolute;
+  font-size: 12px;
+  right: 20px;
+  top: 37px;
+}
+
+.prev-img {
+  height: 190px;
+  width: 150px;
+  top: 135px;
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+
+/****** FOOTER ******/
+
+footer {
+  background-color: white;
+  height: 50px;
+  width: 100%;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2em;
+}
