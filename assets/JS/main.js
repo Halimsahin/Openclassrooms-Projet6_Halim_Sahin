@@ -21,6 +21,7 @@ const imageInput = document.getElementById("image-input");
 const titleInput = document.getElementById("title");
 const selectInput = document.getElementById("select");
 const backgroundGrey = document.querySelector(".background-grey");
+const editionMode = document.querySelector(".mode-edition");
 btnTous.innerText = "Tous";
 
 ////// Evenements //////
@@ -35,6 +36,11 @@ modify.addEventListener("click", () => {
   modale.style.display = "block";
   backgroundGrey.style.display = "block";
 });
+
+editionMode.addEventListener("click", () => {
+  modale.style.display = "block";
+  backgroundGrey.style.display = "block";
+})
 
 cross.addEventListener("click", () => {
   modale.style.display = "none";
@@ -143,6 +149,7 @@ function checkLogin() {
     const logOut = document.querySelector(".log-out");
     const editionMode = document.querySelector(".mode-edition");
     const header = document.querySelector("header");
+    editionModeBis = editionMode;
 
     modify.appendChild(iModify);
     modify.appendChild(btnModify);

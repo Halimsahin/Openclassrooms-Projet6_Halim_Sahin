@@ -220,6 +220,10 @@ li a:hover {
   display: none;
 }
 
+.mode-edition:hover {
+  cursor: pointer;
+}
+
 /****** INTRODUCTION *****/
 
 #introduction {
